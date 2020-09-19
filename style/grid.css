@@ -1,0 +1,177 @@
+.news-section {
+  margin-top: 70px;
+  margin-bottom: 700px;
+}
+
+.grid-container {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.grid-container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.news-hover {
+  transition: all 0.7s;
+  width: 400px;
+  background-color: black;
+  height: 0;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.grid-container a:hover .news-hover {
+  width: 400px;
+  height: 400px;
+
+  opacity: 0.2;
+}
+
+.grid-news {
+  position: relative;
+  background-color: #FCFFB4;
+  opacity: 0;
+  width: 400px;
+  height: 0;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-bottom: solid #858764;
+  z-index: 10;
+}
+
+.grid1, .grid2, .grid3, .grid4 {
+  transition: all 1s;
+}
+
+.grid2 {
+  transition-delay: 0.3s;
+}
+
+.grid3 {
+  transition-delay: 0.6s;
+}
+
+.grid4 {
+  transition-delay: 0.9s;
+}
+
+.grid-anim {
+  opacity: 1;
+  height: 400px;
+}
+
+.img-news {
+  width: 100%;
+  height: 400px;
+  background-color: pink;
+  overflow: hidden;
+}
+
+.img-news img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.paper-news {
+  width: 100%;
+  height: 200px;
+}
+
+.paper-news div {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.title-container {
+  overflow: hidden;
+  overflow: hidden;
+}
+
+.date-container {
+  flex-basis: 20%;
+}
+
+.paper-news h1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.paper-news span {
+  bottom: relative;
+  font-weight: bold;
+}
+
+.round-container {
+  margin-top: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.round {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #abad7e;
+  position: relative;
+  z-index: 10;
+}
+
+/*mobile */
+
+@media only screen and (max-width:426px) {
+  .news-hover {
+    width: 300px;
+  }
+
+  .grid-container a:hover .news-hover {
+    width: 250px;
+    height: 250px;
+  }
+
+  .grid-news {
+    width: 250px;
+    height: 250px;
+    background-color: #d4d69a;
+  }
+
+  .img-news {
+    width: 100%;
+    height: 250px;
+  }
+
+  .paper-news {
+    width: 100%;
+    height: 90px;
+  }
+
+  .paper-news div {
+    padding: 5px 10px 5px 10px;
+  }
+
+  .paper-news h1 {
+    font-size: 15px;
+  }
+
+  .paper-news span {
+    bottom: 0;
+    font-size: 10px;
+    font-weight: bold;
+  }
+}

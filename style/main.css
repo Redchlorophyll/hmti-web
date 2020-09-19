@@ -1,0 +1,295 @@
+.header-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-text {
+  height: 200px;
+  width: 70%;
+  margin-top: 30vh;
+  position: fixed;
+  z-index: -2;
+}
+
+.header-text span {
+  background-color: #FB0105;
+  color: #FCFFB4;
+}
+
+.header-text h1 {
+  color: #FB0105;
+  font-size: 5vw;
+  letter-spacing: 1vw;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+
+}
+
+.white {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: auto;
+  background-color: #fff;
+}
+
+.yellow {
+  width: 100%;
+  height: auto;
+  margin-top: 150vh;
+  border-top: solid #9a9b74;
+  background-color: #FCFFB4;
+  display: flex;
+  justify-content: center;
+}
+
+.yellow-title {
+  top: 40%;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  margin-top: 10%;
+  text-align: center;
+  margin-bottom: 10vh;
+  z-index: 1;
+}
+
+.yellow-title h1 {
+  text-indent: 0.5em;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 5vw;
+  letter-spacing: 3vw;
+}
+
+.yellow-title h3 {
+  font-size: 2vw;
+  letter-spacing: 3px;
+}
+
+.black {
+  padding-top: 40px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 300px;
+  background-color: #21201b;
+}
+
+.black section {
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  padding: 100px 0 150px 0;
+  border-bottom: solid #FCFFB4;
+  border-width: thin;
+}
+
+.black section .container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.black section .container span h1 {
+  color: #FCFFB4;
+}
+
+.vm-desc {
+  overflow: hidden;
+  border-left: solid #FCFFB4;
+  border-width: thick;
+  color: #FCFFB4;
+  margin: 20px 0 20px 0;
+  padding: 10px 20px 10px 30px;
+  font-size: 20px;
+}
+
+.vm-desc p {
+  transform: translateX(-150%);
+}
+
+.about, .visi, .misi {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.visi {transition-delay: 1s;}
+
+.misi {transition-delay: 2s;}
+
+
+.text-anim {
+  max-height: 1000px;
+}
+
+.text-transition {
+  transform: translateX(0) !important;
+}
+
+
+
+
+
+.kotak-saran {
+  overflow: hidden;
+}
+
+.ks-title {
+  color: #FCFFB4;
+  text-align: center;
+}
+
+.ks-title h3 {
+  margin-top: 20px;
+  font-weight: lighter;
+}
+
+.kotak-saran .ks-submit {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 40px;
+  color: #FCFFB4;
+}
+
+.ks-submit p {
+  margin: 20px 0 20px 0;
+  text-align: center;
+}
+
+.kotak-saran input {
+  margin: 0 auto;
+  text-transform: uppercase;
+  background-color: #FCFFB4;
+  font-weight: bold;
+  color: #21201b;
+  width: 80px;
+  height: 40px;
+}
+.kotak-saran input:hover {
+  background-color: #9c9e76;
+}
+
+.galery-title {
+  color: #FCFFB4;
+  text-align: center;
+}
+
+.galery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.galery-container .img-grid {
+  width: 300px;
+  height: 300px;
+  margin: 1px;
+}
+
+.img-grid div {
+  background-color: #b5d5ff;
+  width: 300px;
+  height: 0;
+  opacity: 0.7;
+  position: absolute;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.img-grid div h1 {
+  margin: 120px 10px 10px 10px;
+  text-align: center;
+  color: #000;
+  font-weight: bolder;
+}
+
+.galery-container a:hover .img-grid div {
+  height: 300px;
+}
+
+.img-grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galery-title h3 {
+  margin-top: 20px;
+  font-weight: lighter;
+}
+.social-media {
+  display: flex;
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-media {
+  color: #FCFFB4;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+.social-logo {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* mobile */
+
+@media only screen and (max-width: 426px) {
+  .header-container {
+    height: 600px;
+  }
+
+  .header-text {
+    width: 90%;
+  }
+  .header-text h1 {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (min-width:1440px) {
+  .header-container {
+    height: 1000px;
+  }
+}
+
+@media only screen and (max-width:769px) {
+  .black section {
+    width: 100%;
+  }
+
+  .black section .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .vm-desc {
+    overflow: hidden;
+    border-left: solid #FCFFB4;
+    border-width: thick;
+    color: #FCFFB4;
+    margin: 20px 0 20px 0;
+    padding: 10px 20px 10px 30px;
+    font-size: 2vh;
+  }
+
+  .social-media {
+    width: 80%;
+  }
+}

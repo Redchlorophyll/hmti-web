@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+  <style media="screen">
+    * {
+      margin: 0;
+    }
+
+    .success-container {
+      width: 600px;
+      height: 600px;
+      background-color: red;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .detail-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 400px;
+      height: 100px;
+      margin: 0;
+    }
+
+    .detail-container a {
+      color: #000;
+    }
+
+    .svg-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 400px;
+      height: 150px;
+      margin: 0;
+      transform: translateY(115%);
+    }
+
+    .player {
+      width: 150px;
+      transform: translateX(10%);
+    }
+  </style>
+  </head>
+  <body>
+    <div class="success-container">
+      <div class="svg-container">
+        <lottie-player class="player" src="https://assets4.lottiefiles.com/packages/lf20_QKHsU2.json"  background="transparent"  speed="1" autoplay></lottie-player>
+      </div>
+      <div class="detail-container">
+        <h3>Pesan Anda telah terkirim. kami akan menghubungi anda via Email segera setelah membaca pesan anda.</h3>
+        <a href="">kirim pesan lagi</a>
+      </div>
+    </div>
+  </body>
+</html>

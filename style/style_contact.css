@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #FFA1A1;
+  background-image: url("../img/Sun-Tornado.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+}
+
+footer {
+  background-color: transparent !important;
+}
+
+.icon-color {
+  color: #fff !important;
+}
+
+.footer-container {
+  border-color: #fff !important;
+}
+
+.copyright-container {
+  border-color: #fff !important;
+}

@@ -1,0 +1,305 @@
+.identity-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.identity-card {
+  margin: 250px 0 120px 0;
+  width: 1000px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.identity-card .alamat, .whatsapp, .email {
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+
+  border-right: solid #fff;
+  border-width: thin;
+}
+
+.email {
+  border-right: none;
+
+}
+
+.alamat div {
+  width: 80%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.alamat div p {
+  text-align: center;
+}
+
+.whatsapp div {
+  width: 80%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.whatsapp ul {
+  list-style-type: none;
+}
+
+.email div {
+  width: 80%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.email ul {
+  list-style-type: none;
+}
+
+.card-position {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.illustration-grid, .form-grid {
+  height: auto;
+  margin: 5px;
+  margin-top: 140px;
+  margin-bottom: 80px;
+}
+
+.illustration-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 500px;
+}
+
+.form-grid {
+  width: 600px;
+  height: 500px;
+}
+
+.contactform {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.form-container {
+  transform: translateY(2%);
+}
+
+.text-ill {
+  width: 450px;
+}
+
+.illustration-grid h1 {
+  text-align: center;
+  margin: 10px 0 70px 0;
+  font-weight: bolder;
+}
+
+
+.illustration-grid img {
+  width: 400px;
+}
+
+.contact-container input, textarea {
+  color: #000;
+}
+
+.form-container div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-container div label {
+  margin-bottom: 5px;
+}
+
+.form-container div input {
+  padding: 5px;
+  border: none;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.pesan-container textarea {
+  padding: 5px;
+  resize: none;
+  height: 280px;
+}
+
+.submit-container input {
+  color: #fff;
+  background-color: #C96E6E;
+}
+
+
+/* smoll monitor */
+@media only screen and (max-width:1025px) {
+  .svg-container {
+    transform: translateY(50%);
+  }
+
+  .identity-card {
+    width: 700px;
+    font-size: 15px;
+  }
+
+  .identity-card .alamat, .whatsapp, .email {
+    flex-basis: 234px;
+  }
+
+
+  .illustration-grid {
+    width: 500px;
+  }
+
+  .illustration-grid img {
+    width: 360px;
+  }
+
+  .text-ill {
+    width: 350px;
+  }
+
+  .form-grid {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* tablet */
+@media only screen and (max-width:769px) {
+  .identity-card {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .identity-card .alamat, .whatsapp, .email {
+    flex-basis: 300px;
+  }
+
+}
+
+@media only screen and (max-width:426px) {
+  .identity-card {
+    margin: 150px 0 120px 0;
+  }
+
+  .text-ill {
+    width: 250px;
+    font-size: 15px !important;
+  }
+
+
+  .illustration-grid img {
+    width: 250px;
+  }
+
+  .form-grid {
+    width: 300px;
+    margin-top: 0;
+  }
+
+  .identity-container {
+    width: 100%;
+  }
+
+  .identity-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+  }
+
+  .identity-card .alamat, .whatsapp, .email {
+    margin: 0 auto;
+    border-right: none;
+    border-bottom: solid #fff;
+    border-width: thin;
+    width: 90%;
+  }
+
+  .alamat div {
+    width: 100%;
+  }
+
+  .alamat div:nth-child(1) {
+    margin-top: 20px;
+  }
+
+  .alamat div:nth-child(3) {
+    margin-bottom: 30px;
+  }
+
+  .whatsapp div {
+    width: 100%;
+  }
+
+  .whatsapp div:nth-child(1) {
+    margin-top: 20px;
+  }
+
+  .whatsapp div:nth-child(3) {
+    margin-bottom: 30px;
+  }
+
+  .whatsapp ul {
+    padding: 0;
+  }
+
+  .email div {
+    width: 100%;
+  }
+
+  .email div:nth-child(1) {
+    margin-top: 20px;
+  }
+
+  .email div:nth-child(3) {
+    margin-bottom: 30px;
+  }
+
+  .email ul {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width:321px) {
+  .text-ill {
+    width: 200px;
+    font-size: 15px;
+  }
+
+
+  .illustration-grid img {
+    width: 200px;
+  }
+
+  .form-grid {
+    width: 90%;
+  }
+}

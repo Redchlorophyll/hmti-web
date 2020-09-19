@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/style_contact.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/grid-contact.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style/map.css">
+    <link rel="stylesheet" href="style/success.css">
+    <link rel="stylesheet" href="style/social-media.css">
+    <link rel="stylesheet" href="style/footer.css">
+  </head>
+  <body>
+
+
+    <header id="navbar-white" id='' class="header-nav">
+      <a href="#"><img class="header-logo" src="img/logo.png" alt=""></a>
+      <nav>
+        <ul id="navbar">
+          <li><a href="/">beranda</a></li>
+          <li><a href="#">tentang kami</a></li>
+          <li><a href="#">artikel</a></li>
+          <li><a href="#">galeri</a></li>
+          <li id="isActive"><a href="contact.html">kontak kami</a></li>
+        </ul>
+        <div  class="spin-toggle">
+          <input id='check-burger' type="checkbox" name="" value="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <!--header navigation END-->
+
+    <main>
+      <section class="identity-container">
+        <div class="identity-card">
+          <div class="alamat">
+            <div class="">
+              <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="title">
+              <h3>Alamat</h3>
+            </div>
+            <div class="">
+              <p>Gedung R Fakultas Teknik dan Sains Universitas Muhammadiyah Purwokerto (Jl. Raya Dukuhwaluh, Dusun III, Dukuhwaluh, Kembaran, Kabupaten Banyumas, Jawa Tengah 53182)</p>
+            </div>
+          </div>
+          <div class="whatsapp">
+            <div class="">
+              <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="title">
+              <h3>Whatsapp</h3>
+            </div>
+            <div class="">
+              <ul>
+                <li>08112345678 (Avalon)</li>
+                <li>08144391223 (toku toku)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="email">
+            <div class="">
+                <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+            </div>
+            <div class="title">
+              <h3>Email</h3>
+            </div>
+            <div class="">
+              <ul>
+                <li>hmtiftump@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-container" id='form-pesan'>
+        <div class="illustration-grid">
+          <div class="text-ill">
+            <h1>KAMI SANGAT SENANG BISA MEMBANTU ANDA</h1>
+          </div>
+          <img src="img/message.svg" alt="">
+        </div>
+        <div class="form-grid">
+        <form id="contactForm" class="" method="post">
+          <div class="form-container">
+            <div class="nama-container">
+              <label for="nama">Nama</label>
+              <input type="text" name="nama" value="" placeholder="Masukan Nama anda disini">
+            </div>
+            <div class="email-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" value="" placeholder="example@example.com">
+            </div>
+            <div class="pesan-container">
+              <label for="pesan">Pesan anda</label>
+              <textarea name="pesan" rows="8" cols="80" placeholder="masukan pesan anda di sini"></textarea>
+            </div>
+            <div class="submit-container">
+              <input type="submit" name="submit" value="kirim">
+            </div>
+          </div>
+        </form>
+        </div>
+      </section>
+
+
+      <section class="map-sec">
+        <div class="text-map">
+          <h1>Temukan kami di sini</h1>
+        </div>
+        <div id='map'></div>
+      </section>
+    </main>
+    <aside class="social-aside">
+      <div class="social-media">
+        <div class="title-media">
+          <h2>tetap terhubung dengan kami</h2>
+        </div>
+        <div class="social-logo">
+          <i class="fa fa-facebook-official icon-color fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-instagram icon-color fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-twitter icon-color fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play icon-color fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="image-footer">
+          <img src="img/hmti.png" alt="hmti">
+
+        </div>
+        <div class="footer-wrapper">
+          <nav>
+            <ul>
+              <li> <h3>ALAMAT</h3></li>
+              <li>  Gedung R Fakultas Teknik dan Sains
+Universitas Muhammadiyah Purwokerto
+(Jl. Raya Dukuhwaluh, Dusun III, Dukuhwaluh, Kembaran, Kabupaten Banyumas, Jawa Tengah 53182)</li>
+            </ul>
+          </nav>
+          <nav>
+            <ul>
+              <li><h3>SOCIAL MEDIA</h3></li>
+              <li><i class="fa fa-facebook-official icon-color" aria-hidden="true"></i> facebook</li>
+              <li><i class="fa fa-instagram icon-color" aria-hidden="true"></i> instagram</li>
+              <li><i class="fa fa-twitter icon-color" aria-hidden="true"></i> twitter</li>
+              <li><i class="fa fa-youtube-play icon-color" aria-hidden="true"></i> youtube</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="copyright-container">
+          <span>copyright&copy Dhonni Ari Hendra Saputra.</span>
+        </div>
+      </div>
+    </footer>
+
+
+  <script src="navbar.js" charset="utf-8"></script>
+  <script src="mapbox.js" charset="utf-8"></script>
+  <script src="contactForm.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+.proker-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.proker-header div h1 {
+  text-transform: uppercase;
+  font-size: 3vw;
+  letter-spacing: 5px;
+}
+
+.proker-header h3 {
+  text-transform: uppercase;
+  font-size: 2vw;
+}
+
+
+.proker-container {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proker-card {
+  opacity: 0;
+  overflow: hidden;
+  border: solid 1px;
+  width: 300px;
+  height: 0;
+  margin: 30px 10px 30px 10px;
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 5px 10px 5px;
+
+}
+
+.proker-container .proker-card:nth-child(1) {
+  transition: all 1.5s;
+}
+
+.proker-container .proker-card:nth-child(2) {
+
+  transition: all 1.5s;
+  transition-delay: 0.2s;
+}
+.proker-container .proker-card:nth-child(3) {
+
+  transition: all 1.5s;
+  transition-delay: 0.4s;
+}
+.proker-container .proker-card:nth-child(4) {
+
+  transition: all 1.5s;
+  transition-delay: 0.6s;
+}
+
+.show-proker {
+  opacity: 1;
+  height: 350px;
+}
+
+.proker-logo {
+  margin: 20px 0 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.proker-title h1 {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.proker-logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.proker-desc {
+  padding: 10px 10px 10px 10px;
+}
+
+.proker-desc p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  margin-bottom: 40px;
+  -webkit-box-orient: vertical;
+}
+
+.proker-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.proker-btn input {
+  width: 80%;
+  height: 40px;
+  background-color: #FCFFB4;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  box-shadow: 1px 1px 5px;
+}
+
+.proker-btn input:hover {
+  background-color: #dee0a1;
+}
+
+@media only screen and (max-width:426px) {
+  .proker-card {
+    width: 250px;
+    height: 300px;
+    margin: 30px 10px 30px 10px;
+    padding: 5px 2px 5px 2px;
+  }
+
+  .proker-title h1 {
+    font-size: 15px;
+  }
+
+  .proker-desc p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .proker-btn input {
+    font-size: 15px;
+  }
+}
