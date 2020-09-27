@@ -3,12 +3,330 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <!-- css links -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/navbar.css">
+    <link rel="stylesheet" href="style/galery.css">
+    <link rel="stylesheet" href="style/social-media.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <!-- javascript links -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
   </head>
   <body>
-    <a href="img/untitled.png" data-lightbox="example-1"><img src="" alt=""></a>
+    <!--header navigation-->
+    <header id="navbar-white" class="header-nav">
+      <a href="#"><img class="header-logo" src="img/logo.png" alt=""></a>
+      <nav>
+        <ul id="navbar">
+          <li ><a href="index.html">beranda</a></li>
+          <li><a href="">tentang kami</a></li>
+          <li><a href="#">artikel</a></li>
+          <li id="isActive"><a  href="galery.html">galeri</a></li>
+          <li><a href="contact.html">kontak kami</a></li>
+        </ul>
+        <div  class="spin-toggle">
+          <input id='check-burger' type="checkbox" name="" value="">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <!--header navigation END-->
 
+    <!-- main Start -->
+    <main>
+      <div class="grid" data-masonry-options='{ "fitWidth": true }'>
+        <a data-lightbox="example-1" class="img-link" href="img/cavalry.png">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <span></span>
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/cavalry.png" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/jumping woman.jpg">
+          <div class="grid-item grid-item--width2">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/jumping woman.jpg" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/SERFGANT.jpg">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/SERFGANT.jpg" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/AMONG-US.png">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/AMONG-US.png" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/ghost.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/ghost.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/library_guy.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/library_guy.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/gera12.JPG">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/gera12.JPG" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/KEANU.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/KEANU.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/untitled.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/untitled.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/cavalry.png">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <span></span>
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/cavalry.png" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/jumping woman.jpg">
+          <div class="grid-item grid-item--width2">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/jumping woman.jpg" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/SERFGANT.jpg">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/SERFGANT.jpg" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/AMONG-US.png">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/AMONG-US.png" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/ghost.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/ghost.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/library_guy.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/library_guy.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/gera12.JPG">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/gera12.JPG" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/KEANU.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/KEANU.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/untitled.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/untitled.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/cavalry.png">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <span></span>
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/cavalry.png" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/jumping woman.jpg">
+          <div class="grid-item grid-item--width2">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/jumping woman.jpg" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/SERFGANT.jpg">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/SERFGANT.jpg" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/AMONG-US.png">
+          <div class="grid-item">
+            <div class="grid-hover">
+              <h1>Lorem Ipsum Dolor Sit amet</h1>
+            </div>
+            <img src="img/AMONG-US.png" alt="">
+          </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/ghost.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/ghost.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/library_guy.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/library_guy.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/gera12.JPG">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/gera12.JPG" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/KEANU.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/KEANU.png" alt="">
+        </div>
+        </a>
+        <a data-lightbox="example-1" class="img-link" href="img/untitled.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/untitled.png" alt="">
+        </div>
+        </a>
+      </div>
+
+      <div class="page-load-status">
+        <div class="loader-ellips infinite-scroll-request">
+          <span class="loader-ellips__dot"></span>
+          <span class="loader-ellips__dot"></span>
+          <span class="loader-ellips__dot"></span>
+          <span class="loader-ellips__dot"></span>
+        </div>
+        <h3 class="infinite-scroll-error">wah, kayanya cuman sampai disini. :(</h3>
+      </div>
+    </main>
+    <!-- main end -->
+
+    <!-- aside start -->
+    <aside class="social-aside">
+      <div class="social-media">
+        <div class="title-media">
+          <h2>tetap terhubung dengan kami</h2>
+        </div>
+        <div class="social-logo">
+          <i class="fa fa-facebook-official icon-color fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-instagram icon-color fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-twitter icon-color fa-2x" aria-hidden="true"></i>
+          <i class="fa fa-youtube-play icon-color fa-2x" aria-hidden="true"></i>
+        </div>
+      </div>
+    </aside>
+    <!-- aside end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="footer-container">
+        <div class="image-footer">
+          <img src="img/hmti.png" alt="hmti">
+
+        </div>
+        <div class="footer-wrapper">
+          <nav>
+            <ul>
+              <li> <h3>ALAMAT</h3></li>
+              <li>  Gedung R Fakultas Teknik dan Sains
+Universitas Muhammadiyah Purwokerto
+(Jl. Raya Dukuhwaluh, Dusun III, Dukuhwaluh, Kembaran, Kabupaten Banyumas, Jawa Tengah 53182)</li>
+            </ul>
+          </nav>
+          <nav>
+            <ul>
+              <li><h3>SOCIAL MEDIA</h3></li>
+              <li><i class="fa fa-facebook-official icon-color" aria-hidden="true"></i> facebook</li>
+              <li><i class="fa fa-instagram icon-color" aria-hidden="true"></i> instagram</li>
+              <li><i class="fa fa-twitter icon-color" aria-hidden="true"></i> twitter</li>
+              <li><i class="fa fa-youtube-play icon-color" aria-hidden="true"></i> youtube</li>
+            </ul>
+          </nav>
+        </div>
+        <div class="copyright-container">
+          <span>copyright&copy Dhonni Ari Hendra Saputra.</span>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="navbar.js" charset="utf-8"></script>
     <script src="dist/js/lightbox-plus-jquery.min.js" charset="utf-8"></script>
+    <script src="galery.js" charset="utf-8"></script>
   </body>
 </html>

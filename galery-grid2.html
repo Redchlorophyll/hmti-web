@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+      <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+      <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+      <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <style media="screen">
+    * {margin:0;}
+
+    .grid {
+      margin: 0 auto;
+      width: 1520px;
+
+    }
+
+    .grid-item {
+    }
+
+    .grid-item img {
+      width: 300px;
+    }
+
+    .grid-hover {
+      width: 300px;
+      position: absolute;
+      background-color: #b5d5ff;
+      opacity: 0.7;
+      overflow: hidden;
+      height: 0;
+      transition: all 1s;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-hover h1 {
+      margin: 0 5px 0 5px;
+      color: #000;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 1.5em;
+    }
+
+    .img-link:hover .grid-hover {
+      height: 99%;
+    }
+
+
+
+    @media only screen and (min-width:2000px) {
+      .grid {
+
+        width: 1850px;
+
+      }
+    }
+
+    @media only screen and (max-width: 1519px) {
+      .grid {
+
+        width: 1215px;
+
+      }
+    }
+
+
+    @media only screen and (max-width: 769px) {
+      .grid {
+
+        width: 610px;
+
+      }
+
+      .grid-item img {
+        width: 200px;
+      }
+
+      .grid-hover {
+        width: 200px;
+      }
+      .grid-hover h1 {
+        font-size: 1em;
+      }
+    }
+
+    @media only screen and (max-width: 445px) {
+      .grid {
+        width: 305px;
+
+      }
+
+      .grid-item img {
+        width: 150px;
+      }
+
+      .grid-hover {
+        width: 150px;
+      }
+
+    }
+    </style>
+  </head>
+  <body>
+    <div class="grid" data-masonry-options='{ "fitWidth": true }'>
+      <a data-lightbox="example-1" class="img-link" href="img/cavalry.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <span></span>
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/cavalry.png" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/jumping woman.jpg">
+        <div class="grid-item grid-item--width2">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/jumping woman.jpg" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/SERFGANT.jpg">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/SERFGANT.jpg" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/AMONG-US.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/AMONG-US.png" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/ghost.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/ghost.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/library_guy.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/library_guy.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/gera12.JPG">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/gera12.JPG" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/KEANU.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/KEANU.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/untitled.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/untitled.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/cavalry.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <span></span>
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/cavalry.png" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/jumping woman.jpg">
+        <div class="grid-item grid-item--width2">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/jumping woman.jpg" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/SERFGANT.jpg">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/SERFGANT.jpg" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/AMONG-US.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/AMONG-US.png" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/ghost.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/ghost.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/library_guy.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/library_guy.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/gera12.JPG">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/gera12.JPG" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/KEANU.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/KEANU.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/untitled.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/untitled.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/cavalry.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <span></span>
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/cavalry.png" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/jumping woman.jpg">
+        <div class="grid-item grid-item--width2">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/jumping woman.jpg" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/SERFGANT.jpg">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/SERFGANT.jpg" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/AMONG-US.png">
+        <div class="grid-item">
+          <div class="grid-hover">
+            <h1>Lorem Ipsum Dolor Sit amet</h1>
+          </div>
+          <img src="img/AMONG-US.png" alt="">
+        </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/ghost.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/ghost.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/library_guy.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/library_guy.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/gera12.JPG">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/gera12.JPG" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/KEANU.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/KEANU.png" alt="">
+      </div>
+      </a>
+      <a data-lightbox="example-1" class="img-link" href="img/untitled.png">
+      <div class="grid-item">
+        <div class="grid-hover">
+          <h1>Lorem Ipsum Dolor Sit amet</h1>
+        </div>
+        <img src="img/untitled.png" alt="">
+      </div>
+      </a>
+    </div>
+
+    <script src="dist/js/lightbox-plus-jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+      var elem = document.querySelector('.grid');
+      var msnry = new Masonry( elem, {
+        // options
+        itemSelector: '.grid-item',
+        gutter: 5,
+      });
+
+      imagesLoaded( elem ).on( 'progress', function() {
+        // layout Masonry after each image loads
+        msnry.layout();
+      });
+  </script>
+  </body>
+</html>
