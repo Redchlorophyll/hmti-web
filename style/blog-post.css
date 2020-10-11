@@ -1,0 +1,166 @@
+.title-media {
+  color: #000 !important;
+}
+
+.social-media .icon-color {
+  color: #000 !important;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.parallax-container {
+  position : relative;
+  overflow : hidden;
+  height : 500px;
+}
+.parallax-container .parallax {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index:-1}
+  .parallax-container .parallax img{
+    opacity : 0;
+    position : absolute;
+    left : 50%;
+    bottom : 0;
+    min-width : 100%;
+    min-height : 100%;
+    -webkit-transform : translate3d(0, 0, 0);
+    transform : translate3d(0, 0, 0);
+    -webkit-transform : translateX(-50%);
+    transform : translateX(-50%);
+  }
+
+.parallax-container {
+  height: 400px;
+  z-index: 15;
+}
+
+.parallax img {
+  width: 200%;
+}
+
+.paper {
+  border-top: solid #e1e575;
+  border-width: thick;
+  width: 768px;
+  margin: 0 auto;
+  margin-top: 100px;
+  min-height: 500px;
+  padding-bottom: 80px;
+  margin-bottom: 150px;
+  height: auto;
+  background-color: #fff;
+}
+
+.paper-header {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.paper-content {
+  padding: 20px 30px 20px 30px;
+}
+.category {
+  margin: 10px 0 10px 0;
+}
+.category a {
+  background-color: #302f30;
+  padding: 3px 8px 3px 8px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.paper-category {
+  width: 100%;
+  min-height: 80px;
+  height: auto;
+}
+.news-url {
+  margin: 10px 0 10px 0;
+}
+.news-url a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+.paper-title {
+  margin-bottom: 50px;
+}
+
+.paper-text {
+  line-height: 1.9;
+  font-weight: 500;
+}
+
+.paper-text img {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: auto;
+}
+
+.paper-title h1 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.paper-header img {
+  width: 100%;
+}
+
+
+@media only screen and (max-width: 769px) {
+  .paper {
+    width: 600px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .paper {
+    width: 100%;
+  }
+
+  .paper-title {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .category a {
+    font-size: 8px;
+  }
+
+  .paper-title h1 {
+    font-size: 25px;
+  }
+
+  .paper-text {
+    font-size: 15px;
+  }
+
+  .paper-text img {
+    width: 100%;
+  }
+
+}
