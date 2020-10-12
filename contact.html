@@ -3,14 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style_contact.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/grid-contact.css">
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="style/map.css">
     <link rel="stylesheet" href="style/success.css">
@@ -21,7 +17,7 @@
 
     <!--header navigation-->
     <header id="navbar-white" id='' class="header-nav">
-      <a href="#"><img class="header-logo" src="img/logo.png" alt=""></a>
+      <a href="#"><img class="header-logo" src="icons/logo.png" alt=""></a>
       <nav>
         <ul id="navbar">
           <li><a href="index.html">beranda</a></li>
@@ -141,10 +137,10 @@
           <h2>tetap terhubung dengan kami</h2>
         </div>
         <div class="social-logo">
-          <i class="fa fa-facebook-official icon-color fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-instagram icon-color fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-twitter icon-color fa-2x" aria-hidden="true"></i>
-          <i class="fa fa-youtube-play icon-color fa-2x" aria-hidden="true"></i>
+          <a href="#"><i class="fab fa-facebook icon-color fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fab fa-instagram icon-color fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fab fa-twitter icon-color fa-2x" aria-hidden="true"></i></a>
+          <a href="#"><i class="fab fa-youtube icon-color fa-2x" aria-hidden="true"></i></a>
         </div>
       </div>
     </aside>
@@ -154,7 +150,7 @@
     <footer>
       <div class="footer-container">
         <div class="image-footer">
-          <img src="img/hmti.png" alt="hmti">
+          <img src="icons/hmti.png" alt="hmti">
 
         </div>
         <div class="footer-wrapper">
@@ -169,10 +165,10 @@ Universitas Muhammadiyah Purwokerto
           <nav>
             <ul>
               <li><h3>SOCIAL MEDIA</h3></li>
-              <li><i class="fa fa-facebook-official icon-color" aria-hidden="true"></i> facebook</li>
-              <li><i class="fa fa-instagram icon-color" aria-hidden="true"></i> instagram</li>
-              <li><i class="fa fa-twitter icon-color" aria-hidden="true"></i> twitter</li>
-              <li><i class="fa fa-youtube-play icon-color" aria-hidden="true"></i> youtube</li>
+              <a href="#"><li><i class="fab fa-facebook icon-color" aria-hidden="true"></i> facebook</li></a>
+              <a href="#"><li><i class="fab fa-instagram icon-color" aria-hidden="true"></i> instagram</li></a>
+              <a href="#"><li><i class="fab fa-twitter icon-color" aria-hidden="true"></i> twitter</li></a>
+              <a href="#"><li><i class="fab fa-youtube icon-color" aria-hidden="true"></i> youtube</li></a>
             </ul>
           </nav>
         </div>
@@ -182,7 +178,14 @@ Universitas Muhammadiyah Purwokerto
       </div>
     </footer>
 
+  <!-- JQUERY -->
+  <script src="node_modules\jquery\dist\jquery.min.js" charset="utf-8"></script>
 
+  <!-- mapbox -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+
+  <script src="node_modules/@lottiefiles/lottie-player/dist/lottie-player.js" charset="utf-8"></script>
+  <script src="js/index.js" charset="utf-8" type="module"></script>
   <script src="js/navbar.js" charset="utf-8"></script>
   <script src="js/mapbox.js" charset="utf-8"></script>
   <script src="js/contactForm.js" charset="utf-8"></script>

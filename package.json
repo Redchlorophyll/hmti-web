@@ -1,0 +1,32 @@
+{
+  "name": "hmti-web",
+  "version": "1.0.0",
+  "description": "website originally created for hmti fts ump to replace previous unused and unmaintenance website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Redchlorophyll/hmti-web.git"
+  },
+  "keywords": [
+    "hmtiweb"
+  ],
+  "author": "Dhonni Ari Hendra Saputra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Redchlorophyll/hmti-web/issues"
+  },
+  "homepage": "https://github.com/Redchlorophyll/hmti-web#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "@lottiefiles/lottie-player": "^0.5.1",
+    "imagesloaded": "^4.1.4",
+    "infinite-scroll": "^3.0.6",
+    "jquery": "^3.5.1",
+    "lightbox2": "^2.11.3",
+    "masonry-layout": "^4.2.2",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

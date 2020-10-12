@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/main.css">
@@ -12,13 +10,14 @@
     <link rel="stylesheet" href="style/grid.css">
     <link rel="stylesheet" href="style/proker.css">
     <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="node_modules/lightbox2/dist/css/lightbox.min.css">
+
 
   </head>
   <body>
     <!--header navigation-->
     <header class="header-nav">
-      <a href="#"><img class="header-logo" src="img/logo.png" alt=""></a>
+      <a href="#"><img class="header-logo" src="icons/logo.png" alt=""></a>
       <nav>
         <ul id="navbar">
           <li id="isActive"><a href="index.html">beranda</a></li>
@@ -375,14 +374,15 @@
                     <h2>tetap terhubung dengan kami</h2>
                   </div>
                   <div class="social-logo">
-                    <i class="fa fa-facebook-official icon-color fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-instagram icon-color fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-twitter icon-color fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-youtube-play icon-color fa-2x" aria-hidden="true"></i>
+                    <a href="#"><i class="fab fa-facebook icon-color fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-color fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-twitter icon-color fa-2x" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-youtube icon-color fa-2x" aria-hidden="true"></i></a>
                   </div>
                 </div>
               </aside>
               <!-- aside end -->
+
             </div>
           </main>
     <!-- MAIN end -->
@@ -391,7 +391,7 @@
       <footer>
         <div class="footer-container">
           <div class="image-footer">
-            <img src="img/hmti.png" alt="hmti">
+            <img src="icons/hmti.png" alt="hmti">
 
           </div>
           <div class="footer-wrapper">
@@ -406,10 +406,10 @@
             <nav>
               <ul>
                 <li><h3>SOCIAL MEDIA</h3></li>
-                <li><i class="fa fa-facebook-official icon-color" aria-hidden="true"></i> facebook</li>
-                <li><i class="fa fa-instagram icon-color" aria-hidden="true"></i> instagram</li>
-                <li><i class="fa fa-twitter icon-color" aria-hidden="true"></i> twitter</li>
-                <li><i class="fa fa-youtube-play icon-color" aria-hidden="true"></i> youtube</li>
+                <a href="#"><li><i class="fab fa-facebook icon-color" aria-hidden="true"></i> facebook</li></a>
+                <a href="#"><li><i class="fab fa-instagram icon-color" aria-hidden="true"></i> instagram</li></a>
+                <a href="#"><li><i class="fab fa-twitter icon-color" aria-hidden="true"></i> twitter</li></a>
+                <a href="#"><li><i class="fab fa-youtube icon-color" aria-hidden="true"></i> youtube</li></a>
               </ul>
             </nav>
           </div>
@@ -420,11 +420,16 @@
       </footer>
       </div>
 
+    <!-- JQUERY -->
+    <script src="node_modules\jquery\dist\jquery.min.js" charset="utf-8"></script>
 
+    <!-- lightbox -->
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.min.js" charset="utf-8"></script>
+
+    <script src="js/index.js" charset="utf-8" type="module"></script>
     <script src="js/navbar.js" charset="utf-8"></script>
     <script src="js/proker.js" charset="utf-8"></script>
     <script src="js/grid.js" charset="utf-8"></script>
     <script src="js/vm.js" charset="utf-8"></script>
-    <script src="dist/js/lightbox-plus-jquery.min.js" charset="utf-8"></script>
   </body>
 </html>
