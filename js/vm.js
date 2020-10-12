@@ -1,11 +1,11 @@
-const aboutTrigger = document.querySelector('#about-trigger');
-const about = document.querySelector('.about');
-const visi = document.querySelector('.visi');
-const misi = document.querySelector('.misi');
+var aboutTrigger = document.querySelector('#about-trigger');
+var about = document.querySelector('.about');
+var visi = document.querySelector('.visi');
+var misi = document.querySelector('.misi');
 
-const vmOptions = {};
+var vmOptions = {};
 
-const vmObserver = new IntersectionObserver(function(entries, vmObserver) {
+var vmObserver = new IntersectionObserver(function(entries, vmObserver) {
   entries.forEach((entry) => {
       if(entry.isIntersecting) {
         about.classList.add("text-anim");

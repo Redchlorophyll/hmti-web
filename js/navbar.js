@@ -1,12 +1,12 @@
-const burgerCheck = document.querySelector('#check-burger');
-const navbar = document.querySelector('#navbar');
-const navheader = document.querySelector('.header-nav')
-const triggerNav = document.querySelector('#navbar-white');
+var burgerCheck = document.querySelector('#check-burger');
+var navbar = document.querySelector('#navbar');
+var navheader = document.querySelector('.header-nav')
+var triggerNav = document.querySelector('#navbar-white');
 
 
-const sectionOneOptions = {};
+var sectionOneOptions = {};
 
-const sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
+var sectionOneObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
   entries.forEach((entry) => {
       if(entry.isIntersecting) {
         navheader.classList.add("header-trigger");

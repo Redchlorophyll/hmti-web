@@ -1,6 +1,6 @@
-const scroll = document.querySelector('.curve');
-const bg = document.querySelector('.bg');
-const bound = bg.getBoundingClientRect();
+var scroll = document.querySelector('.curve');
+var bg = document.querySelector('.bg');
+var bound = bg.getBoundingClientRect();
 
 
 
