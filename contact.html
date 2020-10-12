@@ -19,7 +19,7 @@
   </head>
   <body>
 
-
+    <!--header navigation-->
     <header id="navbar-white" id='' class="header-nav">
       <a href="#"><img class="header-logo" src="img/logo.png" alt=""></a>
       <nav>
@@ -39,7 +39,9 @@
     </header>
     <!--header navigation END-->
 
+    <!-- MAIN start -->
     <main>
+      <!-- IDENTITY SECTION start -->
       <section class="identity-container">
         <div class="identity-card">
           <div class="alamat">
@@ -82,35 +84,45 @@
           </div>
         </div>
       </section>
+      <!-- IDENTITY SECTION END -->
+
+      <!-- FORM CONTACT start -->
       <section class="contact-container" id='form-pesan'>
+        <!-- SVG start -->
         <div class="illustration-grid">
           <div class="text-ill">
             <h1>KAMI SANGAT SENANG BISA MEMBANTU ANDA</h1>
           </div>
           <img src="img/message.svg" alt="">
         </div>
+        <!-- SVG end -->
+
+        <!-- FORM start -->
         <div class="form-grid">
-        <form id="contactForm" class="" method="post">
-          <div class="form-container">
-            <div class="nama-container">
-              <label for="nama">Nama</label>
-              <input type="text" name="nama" value="" placeholder="Masukan Nama anda disini">
+          <form id="contactForm" class="" method="post">
+            <div class="form-container">
+              <div class="nama-container">
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" value="" placeholder="Masukan Nama anda disini">
+              </div>
+              <div class="email-container">
+                <label for="email">Email</label>
+                <input type="email" name="email" value="" placeholder="example@example.com">
+              </div>
+              <div class="pesan-container">
+                <label for="pesan">Pesan anda</label>
+                <textarea name="pesan" rows="8" cols="80" placeholder="masukan pesan anda di sini"></textarea>
+              </div>
+              <div class="submit-container">
+                <input type="submit" name="submit" value="kirim">
+              </div>
             </div>
-            <div class="email-container">
-              <label for="email">Email</label>
-              <input type="email" name="email" value="" placeholder="example@example.com">
-            </div>
-            <div class="pesan-container">
-              <label for="pesan">Pesan anda</label>
-              <textarea name="pesan" rows="8" cols="80" placeholder="masukan pesan anda di sini"></textarea>
-            </div>
-            <div class="submit-container">
-              <input type="submit" name="submit" value="kirim">
-            </div>
-          </div>
-        </form>
+          </form>
         </div>
+        <!-- FORM end -->
+
       </section>
+      <!-- FORM CONTACT end -->
 
 
       <section class="map-sec">
@@ -120,6 +132,7 @@
         <div id='map'></div>
       </section>
     </main>
+    <!-- MAIN end -->
 
     <!-- aside start -->
     <aside class="social-aside">
@@ -170,8 +183,8 @@ Universitas Muhammadiyah Purwokerto
     </footer>
 
 
-  <script src="navbar.js" charset="utf-8"></script>
-  <script src="mapbox.js" charset="utf-8"></script>
-  <script src="contactForm.js" charset="utf-8"></script>
+  <script src="js/navbar.js" charset="utf-8"></script>
+  <script src="js/mapbox.js" charset="utf-8"></script>
+  <script src="js/contactForm.js" charset="utf-8"></script>
   </body>
 </html>

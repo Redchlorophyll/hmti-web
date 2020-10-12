@@ -88,14 +88,6 @@
   padding: 10px 10px 10px 10px;
 }
 
-.proker-desc p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4; /* number of lines to show */
-  margin-bottom: 40px;
-  -webkit-box-orient: vertical;
-}
 
 .proker-btn {
   width: 100%;
