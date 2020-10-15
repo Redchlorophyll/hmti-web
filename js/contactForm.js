@@ -1,6 +1,7 @@
 var form = document.querySelector('#contactForm');
 var formcontainer = document.querySelector('.form-grid');
 
+
 $('#contactForm').submit(function(e){
     e.preventDefault();
     form.classList.add("hide");
